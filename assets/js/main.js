@@ -135,7 +135,7 @@ let header = document.querySelector('desktop_header')
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
     stars.style.left = value * 0.25 + 'px';
-    moon.style.top = value * 1.05 + 'px';
+    moon.style.top = value * 1 + 'px';
     mountains_behind.style.top = value * 0.3 + 'px';
     mountains_front.style.top = value * 0 + 'px';
     text.style.marginRight = value * 4 + 'px';
