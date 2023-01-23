@@ -644,6 +644,10 @@ img{
   .sec{
     display: none;
   }
+  
+  .card{
+    display: none;
+  }
 }
 
 /* Classes modified for large screen size */
