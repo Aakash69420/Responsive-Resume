@@ -644,9 +644,45 @@ img{
   .sec{
     display: none;
   }
-  
+
   .card{
     display: none;
+  }
+
+  .bubbles{
+    position: absolute;
+    display: flex;
+    z-index: -100;
+  }
+
+  .bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(500s / var(--i));
+  }
+
+  .bubbles span:nth-child(even){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+  } 
+
+  @keyframes animate {
+    0%{
+      transform: translateY(0vh) scale(0);
+    }
+    100%{
+      transform: translateY(-450vh) scale(1);
+    }
   }
 }
 
@@ -846,7 +882,7 @@ img{
   }
 
   .bubbles{
-    position: relative;
+    position: absolute;
     display: flex;
   }
 
