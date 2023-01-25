@@ -54,8 +54,6 @@ body.dark-theme{
   --container-color: #212121;
   --container-color-alt: #181616;
   --body-color:#0c192c;
-
-
 }
 
 /*========== Button Dark/Light ==========*/
@@ -648,14 +646,15 @@ img{
   .card{
     display: none;
   }
-
-  .bubbles{
+  
+  /* Glow effect on phone */
+  .bubbles_phone{
     position: absolute;
     display: flex;
     z-index: -100;
   }
 
-  .bubbles span{
+  .bubbles_phone span{
     position: relative;
     width: 30px;
     height: 30px;
@@ -669,7 +668,7 @@ img{
     animation-duration: calc(500s / var(--i));
   }
 
-  .bubbles span:nth-child(even){
+  .bubbles_phone span:nth-child(even){
     background: #ff2d75;
     box-shadow: 0 0 0 10px #ff2d7544,
     0 0 50px #ff2d75,
